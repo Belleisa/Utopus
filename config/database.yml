@@ -22,7 +22,8 @@ test:
 
 production:
   host: 127.0.0.1
+  adapter: postgresql
   port: 5432
   database: aularuby
   user: rootruby
-  password: belamavi
+  password: "belamavi"

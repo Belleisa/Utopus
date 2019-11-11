@@ -36,7 +36,10 @@
 	</nav>
 
 	<a href="index.html" tabindex="11">
-		<img src="images/logo.png" id="logo" alt="Logo Utopus - Home" title="UTOPUS Home">
+		<%= link_to root_path do %>
+   		<%= image_tag "logo.png", id: "logo",  alt: "Logo Utopus - Home", title: "UTOPUS Home"  %>
+		<% end %>
+		
 	</a>
 
 </header>
@@ -44,12 +47,16 @@
 <main>
 
 <div class="banner" id="iniciodoconteudo">
-	<img src="imagens/banner-mobile.jpg" id="bn-mob" alt="Banner Utopus">
+	<%= link_to root_path do %>
+   	<%= image_tag "banner-mobile.jpg", id: "bn-mob",  alt: "Banner Utopus" %>
+	<% end %>
 </div>
 
 <div id="imghome">
 	<a href="artistas.html">
-		<img class="imglink" src="imagens/link-home1.jpg" alt="Conheça nossos artistas">
+		<%= link_to root_path do %>
+   		<%= image_tag "link-home1.jpg", class: "imglink",  alt: "Conheça nossos artistas" %>
+		<% end %>
 	</a>
 	<a href="eventos.html">
 		<img class="imglink" src="imagens/link-home2.jpg" alt="Veja nosso calendário">
