@@ -59,21 +59,29 @@
 		<% end %>
 	</a>
 	<a href="eventos.html">
-		<img class="imglink" src="imagens/link-home2.jpg" alt="Veja nosso calendário">
+		<%= link_to root_path do %>
+   		<%= image_tag "link-home2.jpg", class: "imglink",  alt: "Veja nosso calendário" %>
+		<% end %>
 	</a>
 	<a href="produtos.html">
-		<img class="imglink" src="imagens/link-home3.jpg" alt="Conheça nossos produtos">
+		<%= link_to root_path do %>
+   		<%= image_tag "link-home3.jpg", class: "imglink",  alt: "Conheça nossos produtos" %>
+		<% end %>
 	</a>
 	<a href="sobre.html">
-		<img class="imglink" src="imagens/link-home4.jpg" alt="Conheça a Utopus">
+		<%= link_to root_path do %>
+   		<%= image_tag "link-home4.jpg", class: "imglink",  alt: "Conheça a Utopus" %>
+		<% end %>
 	</a>
 </div>
 	
 <div id="sections-mob">
 
 	<h1>Eventos</h1>
-
-	<img src="imagens/evento-mobile.jpg" id="event-mob" alt="Eventos Utopus">
+	
+	<%= link_to root_path do %>
+   	<%= image_tag "eventos-mobile.jpg", id: "event-mob",  alt: "Eventos Utopus" %>
+	<% end %>
 	<div class="vejam">
 		<a href="eventos.html">Veja mais eventos</a>
 	</div>
@@ -94,16 +102,24 @@
 <footer id="rodape">
 
 <a href="https://www.youtube.com/channel/UCeDiq6Ex3FJeGyrcaaELjvg" target="_blank">
-	<img src="imagens/yt.png" alt="Ícone do Youtube" title="YouTube UTOPUS">
+	<%= link_to root_path do %>
+   	<%= image_tag "yt.png", alt: "Ícone do Youtube", title: "Youtube Utopus" %>
+	<% end %>
 </a>
 <a href="https://www.facebook.com/projetoutopus/" target="_blank">
-	<img src="imagens/fb.png" alt="Ícone do Facebook" title="Facebook UTOPUS">
+	<%= link_to root_path do %>
+   	<%= image_tag "fb.png", alt: "Ícone do Facebook", title: "Facebook Utopus" %>
+	<% end %>
 </a>
 <a href="https://www.instagram.com/projetoutopus/" target="_blank">
-	<img src="imagens/ig.png" alt="Ícone do Instagram" title="Instagram UTOPUS">
+	<%= link_to root_path do %>
+   	<%= image_tag "ig.png", alt: "Ícone do Instagram", title: "Instagram Utopus" %>
+	<% end %>
 </a>
 <a href="http://blogutopus.blogspot.com.br/" target="_blank">
-	<img src="imagens/blog.png" alt="Ícone do Blog" title="Blog UTOPUS">
+	<%= link_to root_path do %>
+   	<%= image_tag "blog.png", alt: "Ícone do Blog", title: "Blog Utopus" %>
+	<% end %>
 </a>
 
 <p> &copy; UTOPUS All rights reserved 2018 </p>
