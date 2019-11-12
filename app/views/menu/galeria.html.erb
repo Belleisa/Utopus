@@ -1,0 +1,244 @@
+<header>
+
+	<div id="acessibilidade">
+		<ul id="atalhos">
+			<li><a href="#iniciodoconteudo" tabindex="1" accesskey="1">Conteúdo [1]</a></li>
+			<li><a href="#iniciodomenu" tabindex="2" accesskey="2">Menu [2]</a></li>
+			<li><a href="#rodape" tabindex="3" accesskey="3">Rodapé [3]</a></li>
+		</ul>
+		<ul id="botoes">	
+			<li><a href="ajuda-acessibilidade.html" id="bt_acessibilidade" tabindex="4" accesskey="4">Acessibilidade [4]</a></li>
+			<li><a href="#" id="bt_contraste" tabindex="5" accesskey="5">Alto contraste [5]</a></li>	
+			<li><a href="#" id="bt_menor" tabindex="6" accesskey="6">-A</a></li>
+			<li><a href="#" id="bt_maior" tabindex="7" accesskey="7">+A</a></li>
+		</ul>
+	<noscript>
+		Caro leitor!
+		Se você estiver lendo esta mensagem é porque o seu navegador não suporta
+		"javascripts" ou porque a permissão de executar "javascripts" está
+		desabilitada.
+		Click no endereço a seguir para ver o conteúdo <a href="noscript/galeria.html">Galeria</a> em uma página sem "javascripts".
+	</noscript>
+	</div>
+
+<input type="checkbox" id="bt_menu">
+<label for="bt_menu">&#9776;</label>
+
+	<nav class="menu" id="iniciodomenu">
+		<ul>
+			<li><a href="artistas.html" tabindex="8">Artistas</a></li>
+			<li><a href="produtos.html" tabindex="9">Produtos</a></li>
+			<li><a href="galeria.html" tabindex="10">Galeria</a></li>
+			<li><a href="eventos.html" tabindex="12">Eventos</a></li>
+			<li><a href="sobre.html" tabindex="13">Sobre</a></li>
+			<li><a href="contato.html" tabindex="14">Contato</a></li>
+		</ul>
+	</nav>
+
+	<%= link_to root_path do %>
+   		<%= image_tag "logo.png", id: "logo",  alt: "Logo Utopus - Home", title: "UTOPUS Home", tabindex: "11"  %>
+	<% end %>
+
+</header>
+
+<main id="pagina-galeria">
+
+<h1 id="iniciodoconteudo">Galeria</h1>
+
+	<section id="f1">
+	
+		<h2>Fotos dos eventos</h2>	
+
+		<a href="imagens/galeria/1.jpg" data-lightbox="img1">
+			<%= image_tag "galeria/1.jpg", alt: "Na foto há jovens em volta do balcão de bebidas. 
+			A decoração é feita com luzes coloridas.", title: "Uneon Mix" %>
+		</a>
+
+		<a href="imagens/galeria/2.jpg" data-lightbox="img1">
+			<%= image_tag "galeria/2.jpg", alt: "A foto é composta por um grande número de jovens na pista de dança.", title: "Uneon Party" %>
+		</a>
+
+		<a href="imagens/galeria/3.jpg" data-lightbox="img1">
+			<%= image_tag "galeria/3.jpg", alt: "Na foto há uma DJ utilizando seu equipamento, ao fundo uma parede lisa 
+			com um objeto decorativo com o formato do símbolo da paz.", title: "Uneon Summer" %>
+		</a>
+
+		<a href="imagens/galeria/4.jpg" data-lightbox="img1">
+			<%= image_tag "galeria/4.jpg", alt: "Na foto há jovens dançando na pista de dança.", title: "Uneon Summer" %>
+		</a>
+
+		<a href="imagens/galeria/5.jpg" data-lightbox="img1">
+			<%= image_tag "galeria/5.jpg", alt: "Na foto há apenas a silhueta de algumas pessoas incluindo a DJ 
+			que está no palco.", title: "Uneon Summer" %>
+		</a>
+
+		<a href="imagens/galeria/6.jpg" data-lightbox="img1">
+			<%= image_tag "galeria/6.jpg", alt: "Na foto há jovens dançando na pista de dança.", title: "Uneon Summer" %>
+		</a>
+
+		<a href="imagens/galeria/7.jpg" data-lightbox="img1">
+			<%= image_tag "galeria/7.jpg", alt: "A foto possui tons escuros, é possível identificar o palco 
+			decorado com luzes coloridas e tons neon.", title: "Uneon Fantasy" %>
+		</a>
+
+		<a href="imagens/galeria/8.jpg" data-lightbox="img1">
+			<%= image_tag "galeria/8.jpg", alt: "A foto possui tons escuros, é possível identificar o palco 
+			decorado com tons neon.", title: "Uneon Fantasy" %>
+		</a>
+
+		<a href="imagens/galeria/9.jpg" data-lightbox="img1">
+			<%= image_tag "galeria/9.jpg", alt: "Na foto há vários jovens posando no meio da pista de dança.", 
+			title: "Uneon Festival" %>
+		</a>
+
+		<a href="imagens/galeria/10.jpg" data-lightbox="img1">
+			<%= image_tag "galeria/10.jpg", alt: "Na foto há vários jovens posando.", 
+			title: "Uneon Festival" %>
+		</a>
+
+		<a href="imagens/galeria/11.jpg" data-lightbox="img1">
+			<%= image_tag "galeria/11.jpg", alt: "Na foto há alguns garotos segurando luzes em um ambiente escuro.", 
+			title: "Uneon Mix" %>
+		</a>
+
+		<a href="imagens/galeria/12.jpg" data-lightbox="img1">
+			<%= image_tag "galeria/12.jpg", alt: "Na foto há vários jovens posando.", 
+			title: "Uneon" %>
+		</a>
+
+		<a href="imagens/galeria/13.jpg" data-lightbox="img1">
+			<%= image_tag "galeria/13.jpg", alt: "Na foto há vários jovens dançando.", 
+			title: "Uneon" %>
+		</a>
+
+		<a href="imagens/galeria/14.jpg" data-lightbox="img1">
+			<%= image_tag "galeria/14.jpg", alt: "Na foto há vários jovens posando juntos.", 
+			title: "Uneon" %>
+		</a>
+
+		<a href="imagens/galeria/15.jpg" data-lightbox="img1">
+			<%= image_tag "galeria/15.jpg", alt: "Na foto há vários jovens dançando em conjunto na pista de dança.", 
+			title: "Uneon" %>
+		</a>
+
+		<a href="imagens/galeria/16.jpg" data-lightbox="img1">
+			<%= image_tag "galeria/16.jpg", alt: "Na foto há alguns garotos posando em frente a luzes azuis no 
+			ambiente escuro.", 
+			title: "Uneon" %>
+		</a>
+
+		<a href="imagens/galeria/17.jpg" data-lightbox="img1">
+			<%= image_tag "galeria/17.jpg", alt: "A foto mostra o público assistindo uma apresentação. A foto está escura pois é noite.", 
+			title: "Sarau na Praça" %>
+		</a>
+
+		<a href="imagens/galeria/18.jpg" data-lightbox="img1">
+			<%= image_tag "galeria/18.jpg", alt: "Na foto há uma artista se apresentando, ela está cantando e 
+			tocando um ukelele sentada.", 
+			title: "Sarau na Praça" %>
+		</a>
+
+		<a href="imagens/galeria/19.jpg" data-lightbox="img1">
+			<%= image_tag "galeria/19.jpg", alt: "A foto mostra o público assistindo uma das apresentações.", 
+			title: "Sarau na Praça" %>
+		</a>
+
+		<a href="imagens/galeria/20.jpg" data-lightbox="img1">
+			<%= image_tag "galeria/20.jpg", alt: "Na foto há dois artistas, um tocando um violão sentado e
+			outro cantando em pé. Também há pessoas ao fundo.", 
+			title: "Sarau na Praça" %>
+		</a>
+
+		<a href="imagens/galeria/21.jpg" data-lightbox="img1">
+			<%= image_tag "galeria/21.jpg", alt: "A foto mostra o público assistindo uma apresentação. 
+			A maioria está sentada.", 
+			title: "Sarau na Praça" %>
+		</a>
+
+		<a href="imagens/galeria/22.jpg" data-lightbox="img1">
+			<%= image_tag "galeria/22.jpg", alt: "Na foto há um artista se apresentando. O mesmo está em pé 
+			e de frente para o microfone.", 
+			title: "Sarau na Praça" %>
+		</a>
+
+		<a href="imagens/galeria/23.jpg" data-lightbox="img1">
+			<%= image_tag "galeria/23.jpg", alt: "Na imagem há um artista cantando e tocando guitarra. 
+			Ele está em pé e de frente para o microfone.", 
+			title: "Sarau na Praça" %>
+		</a>
+
+		<a href="imagens/galeria/24.jpg" data-lightbox="img1">
+			<%= image_tag "galeria/24.jpg", alt: "Na foto há um artista tocando baixo.", 
+			title: "Sarau na Praça" %>
+		</a>
+
+		<a href="imagens/galeria/25.jpg" data-lightbox="img1">
+			<%= image_tag "galeria/25.jpg", alt: "Na imagem há um artista se apresentando em pé no palco.", 
+			title: "Sarau na Praça" %>
+		</a>
+
+		<a href="imagens/galeria/26.jpg" data-lightbox="img1">
+			<%= image_tag "galeria/26.jpg", alt: "Na foto há um grupo de dança se apresentando, todos os 
+			dançarinos estão de pé em cima do palco.", 
+			title: "Sarau na Praça" %>
+		</a>
+
+		<a href="imagens/galeria/27.jpg" data-lightbox="img1">
+			<%= image_tag "galeria/27.jpg", alt: "Na imagem há um artista tocando violão sentado de 
+			frente para o microfone.", 
+			title: "Sarau na Praça" %>
+		</a>
+
+		<a href="imagens/galeria/1.jpg" data-lightbox="img1">
+			<%= image_tag "galeria/27.jpg", alt: "Na foto há jovens em volta do balcão de bebidas. 
+			A decoração é feita com luzes coloridas.", 
+			title: "Uneon Mix" %>
+		</a>
+
+		<a class="vejamais" href="https://pt-br.facebook.com/projetoutopus/">Ver Mais</a>
+
+	</section>
+
+	<section id="v1">
+
+		<h2>Vídeos dos eventos</h2>
+
+		<iframe width="55%" height="315" src="https://www.youtube.com/embed/xVwY9868QwQ?rel=0" allow="autoplay; encrypted-media" allowfullscreen title="Alanis Canta Pulsos (Pitty) - FINAL UTOPUS 2015"></iframe>
+
+		<iframe width="55%" height="315" src="https://www.youtube.com/embed/VIc7f65hugY?rel=0" allow="autoplay; encrypted-media" allowfullscreen title="Diego canta All For Love (Bryan Adams) - FINAL UTOPUS 2015"></iframe>
+
+		<a class="vejamais" href="https://pt-br.facebook.com/projetoutopus/">Ver Mais</a>
+
+	</section>
+	
+	<section id="f-mob">
+		<h2>Fotos dos eventos</h2>
+   		<%= image_tag "galeria/13.jpg", alt: "Foto de evento Utopus" %>
+   		<%= image_tag "galeria/6", alt: "Foto de evento Utopus" %>
+		<div class="vejamf"><a href="https://pt-br.facebook.com/projetoutopus/">Veja mais fotos</a></div>
+		
+		<h2>Vídeos dos eventos</h2>
+		<p>Veja vídeos de eventos e muito mais em nosso canal no Youtube!</p>
+		<a href="https://www.youtube.com/channel/UCeDiq6Ex3FJeGyrcaaELjvg"><img src="imagens/yt.png" alt="Ícone do YouTube"></a>
+	</section>
+
+</main>
+
+<footer id="rodape">
+
+<a href="https://www.youtube.com/channel/UCeDiq6Ex3FJeGyrcaaELjvg" target="_blank">
+   	<%= image_tag "yt.png", alt: "Ícone do Youtube", title: "Youtube Utopus" %>
+</a>
+<a href="https://www.facebook.com/projetoutopus/" target="_blank">
+   	<%= image_tag "fb.png", alt: "Ícone do Facebook", title: "Facebook Utopus" %>
+</a>
+<a href="https://www.instagram.com/projetoutopus/" target="_blank">
+   	<%= image_tag "ig.png", alt: "Ícone do Instagram", title: "Instagram Utopus" %>
+</a>
+<a href="http://blogutopus.blogspot.com.br/" target="_blank">
+   	<%= image_tag "blog.png", alt: "Ícone do Blog", title: "Blog Utopus" %>
+</a>
+
+<p> &copy; UTOPUS All rights reserved 2018 </p>
+
+</footer>

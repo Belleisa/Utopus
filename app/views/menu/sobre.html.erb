@@ -1,11 +1,11 @@
-
 <header>
+	
 	<div id="acessibilidade">
 		<ul id="atalhos">
 			<li><a href="#iniciodoconteudo" tabindex="1" accesskey="1">Conteúdo [1]</a></li>
 			<li><a href="#iniciodomenu" tabindex="2" accesskey="2">Menu [2]</a></li>
 			<li><a href="#rodape" tabindex="3" accesskey="3">Rodapé [3]</a></li>
-		</ul>	
+		</ul>
 		<ul id="botoes">	
 			<li><a href="ajuda-acessibilidade.html" id="bt_acessibilidade" tabindex="4" accesskey="4">Acessibilidade [4]</a></li>
 			<li><a href="#" id="bt_contraste" tabindex="5" accesskey="5">Alto contraste [5]</a></li>	
@@ -17,10 +17,10 @@
 		Se você estiver lendo esta mensagem é porque o seu navegador não suporta
 		"javascripts" ou porque a permissão de executar "javascripts" está
 		desabilitada.
-		Click no endereço a seguir para ver o conteúdo <a href="noscript/index.html">Home</a> em uma página sem "javascripts".
+		Click no endereço a seguir para ver o conteúdo <a href="noscript/sobre.html">Sobre</a> em uma página sem "javascripts".
 	</noscript>
 	</div>
-
+	
 <input type="checkbox" id="bt_menu">
 <label for="bt_menu">&#9776;</label>
 
@@ -35,55 +35,40 @@
 		</ul>
 	</nav>
 
-
 	<%= link_to root_path do %>
    		<%= image_tag "logo.png", id: "logo",  alt: "Logo Utopus - Home", title: "UTOPUS Home", tabindex: "11"  %>
 	<% end %>
 
 </header>
 
-<main>
+<main id="pagina-sobre">
 
-<div class="banner" id="iniciodoconteudo">
-   	<%= image_tag "banner-mobile.jpg", id: "bn-mob",  alt: "Banner Utopus" %>
-</div>
+<h1 id="iniciodoconteudo"> Sobre nós </h1>
+<%= link_to root_path do %>
+<%= image_tag "keyframes/cassete.png", id:"key-img", alt: "Ilustração de fita cassete" %>
+<% end %>
 
-<div id="imghome">
-	<a href="artistas.html">
-   		<%= image_tag "link-home1.jpg", class: "imglink",  alt: "Conheça nossos artistas" %>
-	</a>
-	<a href="eventos.html">
-   		<%= image_tag "link-home2.jpg", class: "imglink",  alt: "Veja nosso calendário" %>
-	</a>
-	<a href="produtos.html">
-   		<%= image_tag "link-home3.jpg", class: "imglink",  alt: "Conheça nossos produtos" %>
-	</a>
-	<a href="sobre.html">
-   		<%= image_tag "link-home4.jpg", class: "imglink",  alt: "Conheça a Utopus" %>
-	</a>
-</div>
-	
-<div id="sections-mob">
+<p> <strong> Utopus </strong>é o nome do coletivo criado em 2014, 
+na cidade de Itanhaém (litoral de São Paulo) que se formalizou como ONG em 
+agosto de 2017, nossos objetivos são: </p>
 
-	<h1>Eventos</h1>
-	
-	
-   	<%= image_tag "evento_mobile.jpg", id: "event-mob",  alt: "Eventos Utopus" %>
-	
-	<div class="vejam">
-		<a href="eventos.html">Veja mais eventos</a>
-	</div>
-	<div class="linkstext">
-		<a href="artistas.html">Conheça os artistas</a>
-	</div>
-	<div class="linkstext">
-		<a href="produtos.html">Produtos</a>
-	</div>
-	<div class="linkstext">
-		<a href="galeria.html">Fotos e vídeos</a>
-	</div>	
+<p>
+<ul>
+	<li>
+	Achar, divulgar e profissionalizar jovens talentos, principalmente da área artística, 
+	já que é surpreendente o número de adolescentes que canta, dança, desenha, escreve e gosta 
+	de atuar. Valorizando a carreira artística como um sustento econômico;
+	</li>
+	<li>
+	Fomentar a cultura no município de Itanhaém, por meio de eventos culturais variados;
+	</li>
+	<li>
+	Criar espaços alternativos e seguros de lazer e entretenimento, onde o jovem possa 
+	vivenciar experiências comuns à idade, mas de maneira consciente.
+	</li>
+</ul>
+</p>
 
-</div>
 
 </main>
 

@@ -1,0 +1,128 @@
+<header>
+	<div id="acessibilidade">
+		<ul id="atalhos">
+			<li><a href="#iniciodoconteudo" tabindex="1" accesskey="1">Conteúdo [1]</a></li>
+			<li><a href="#iniciodomenu" tabindex="2" accesskey="2">Menu [2]</a></li>
+			<li><a href="#rodape" tabindex="3" accesskey="3">Rodapé [3]</a></li>
+		</ul>	
+		<ul id="botoes">	
+			<li><a href="ajuda-acessibilidade.html" id="bt_acessibilidade" tabindex="4" accesskey="4">Acessibilidade [4]</a></li>
+			<li><a href="#" id="bt_contraste" tabindex="5" accesskey="5">Alto contraste [5]</a></li>	
+			<li><a href="#" id="bt_menor" tabindex="6" accesskey="6">-A</a></li>
+			<li><a href="#" id="bt_maior" tabindex="7" accesskey="7">+A</a></li>
+		</ul>	
+	<noscript>
+		Caro leitor!
+		Se você estiver lendo esta mensagem é porque o seu navegador não suporta
+		"javascripts" ou porque a permissão de executar "javascripts" está
+		desabilitada.
+		Click no endereço a seguir para ver o conteúdo <a href="noscript/ajuda-acessibilidade.html">Acessibilidade</a> em uma página sem "javascripts".
+	</noscript>
+	</div>
+
+<input type="checkbox" id="bt_menu">
+<label for="bt_menu">&#9776;</label>
+
+	<nav class="menu" id="iniciodomenu">
+		<ul>
+			<li><a href="artistas.html" tabindex="8">Artistas</a></li>
+			<li><a href="produtos.html" tabindex="9">Produtos</a></li>
+			<li><a href="galeria.html" tabindex="10">Galeria</a></li>
+			<li><a href="eventos.html" tabindex="12">Eventos</a></li>
+			<li><a href="sobre.html" tabindex="13">Sobre</a></li>
+			<li><a href="contato.html" tabindex="14">Contato</a></li>
+		</ul>
+	</nav>
+
+	<%= link_to root_path do %>
+   		<%= image_tag "logo.png", id: "logo",  alt: "Logo Utopus - Home", title: "UTOPUS Home", tabindex: "11"  %>
+	<% end %>
+
+</header>
+
+<main id="pagina-acessibilidade">
+   
+    <h1 id="iniciodoconteudo">Website Utopus: Ajuda de Acessibilidade</h1>
+
+    <div id="acess">
+    <p>O site UTOPUS foi desenvolvido de forma a oferecer uma melhor acessibilidade e navegabilidade aos seus visitantes, atingindo assim um amplo público.</p>
+    
+    <p>O design e desenvolvimento do site seguiram principalmente as recomendações apresentadas no documento WCAG 2.0 (Web Content Accessibility Guidelines), do W3C (World Wide Web Consortium), principal organização de padronização da Web, que desenvolve especificações técnicas e orientações de uso internacional. </p> 
+    
+    <p>O site foi testado nos principais e mais utilizados navegadores, tais como Firefox, Internet Explorer, Chrome e Safari. </p>
+    
+    <p>Se você encontrar alguma dificuldade ou tiver alguma sugestão que possa melhorar a qualidade e acessibilidade do nosso site, por favor <a href="contato.html">entre em contato</a>.</p>
+        
+    <h2>Teclas de Atalho por Navegadores</h2>    
+    <h3>Internet Explorer e Google Chrome:</h3>
+
+    <ul>
+    <li>“Alt + 1” - Ir para o conteúdo da página</li>
+    <li>“Alt + 2” - Ir para o menu</li>
+    <li>“Alt + 3” – Ir para o rodapé</li>
+    <li>“Alt + 4” – Acessar esta página de Ajuda de Acessibilidade</li>
+    <li>“Alt + 5” – Ativar configuração de autocontraste</li>
+    <li>“Alt + 6” – Diminuir fonte</li>
+    <li>“Alt + 7” – Aumentar fonte</li>
+    </ul>
+
+    <h3>Firefox:</h3>
+
+    <ul>
+    <li>“Alt + Shift + 1” - Ir para o conteúdo página</li>
+    <li>“Alt + Shift + 2” - Ir para o menu</li>
+    <li>“Alt + Shift + 3” - Ir para o rodapé</li>
+    <li>“Alt + Shift + 4” - Acessar esta página de Ajuda de Acessibilidade</li>
+    <li>“Alt + Shift + 5” - Ativar configuração de autocontraste</li>
+    <li>“Alt + Shift + 6” - Diminuir fonte</li>
+    <li>“Alt + Shift + 7” - Aumentar fonte</li>
+    </ul>
+
+    <h3>Safari:</h3>
+    <ul>
+    <li>“Ctrl + 1” - Ir para o conteúdo da página</li>
+    <li>“Ctrl + 2” - Ir para o menu</li>
+    <li>“Ctrl + 3” - Ir para o rodapé</li>
+    <li>“Ctrl + 4” - Acessar esta página de Ajuda de Acessibilidade</li>
+    <li>“Ctrl + 5” - Ativar configuração de autocontraste</li>
+    <li>“Ctrl + 6” - Diminuir fonte</li>
+    <li>“Ctrl + 7” - Aumentar fonte</li>
+    </ul>
+    
+    
+    <h2>Navegação por Tabulação</h2>
+    <p>Use a tecla Tab para navegar por elementos que recebem ação do usuário no site, 
+	tais como links, botões, campos de formulário e outros na ordem em que eles são 
+	apresentados na página, e Shift + Tab para retornar.</p>
+    
+    <h2>Sugestões de programas disponíveis para pessoas com deficiência</h2>
+    <ul>
+    <li>- <strong>Nitrous Voice Flux:</strong> controla o computador por voz. Gratuito;</li>
+    <li>- <strong>NVDA:</strong> software livre para ler tela – vários idiomas (Windows);</li>
+    <li>- <strong>YeoSoft Text:</strong> leitor de tela em inglês e português;</li>
+    <li>- <strong>Jaws for Windows:</strong> leitor de tela – vários idiomas;</li>
+    <li>- <strong>Virtual Vision:</strong> leitor de telas em português do Brasil;</li>
+    <li>- <strong>DOSVOX:</strong> sistema para deficientes visuais (Windows ou Linux).</li>
+    </ul>
+	
+</div>
+</main>
+
+<footer id="rodape">
+
+<a href="https://www.youtube.com/channel/UCeDiq6Ex3FJeGyrcaaELjvg" target="_blank">
+   	<%= image_tag "yt.png", alt: "Ícone do Youtube", title: "Youtube Utopus" %>
+</a>
+<a href="https://www.facebook.com/projetoutopus/" target="_blank">
+   	<%= image_tag "fb.png", alt: "Ícone do Facebook", title: "Facebook Utopus" %>
+</a>
+<a href="https://www.instagram.com/projetoutopus/" target="_blank">
+   	<%= image_tag "ig.png", alt: "Ícone do Instagram", title: "Instagram Utopus" %>
+</a>
+<a href="http://blogutopus.blogspot.com.br/" target="_blank">
+   	<%= image_tag "blog.png", alt: "Ícone do Blog", title: "Blog Utopus" %>
+</a>
+
+<p> &copy; UTOPUS All rights reserved 2018 </p>
+
+</footer>

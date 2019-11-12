@@ -1,23 +1,23 @@
-
 <header>
+
 	<div id="acessibilidade">
 		<ul id="atalhos">
 			<li><a href="#iniciodoconteudo" tabindex="1" accesskey="1">Conteúdo [1]</a></li>
 			<li><a href="#iniciodomenu" tabindex="2" accesskey="2">Menu [2]</a></li>
 			<li><a href="#rodape" tabindex="3" accesskey="3">Rodapé [3]</a></li>
-		</ul>	
+		</ul>
 		<ul id="botoes">	
 			<li><a href="ajuda-acessibilidade.html" id="bt_acessibilidade" tabindex="4" accesskey="4">Acessibilidade [4]</a></li>
 			<li><a href="#" id="bt_contraste" tabindex="5" accesskey="5">Alto contraste [5]</a></li>	
 			<li><a href="#" id="bt_menor" tabindex="6" accesskey="6">-A</a></li>
 			<li><a href="#" id="bt_maior" tabindex="7" accesskey="7">+A</a></li>
-		</ul>	
+		</ul>
 	<noscript>
 		Caro leitor!
 		Se você estiver lendo esta mensagem é porque o seu navegador não suporta
 		"javascripts" ou porque a permissão de executar "javascripts" está
 		desabilitada.
-		Click no endereço a seguir para ver o conteúdo <a href="noscript/index.html">Home</a> em uma página sem "javascripts".
+		Click no endereço a seguir para ver o conteúdo <a href="noscript/produtos.html">Produtos</a> em uma página sem "javascripts".
 	</noscript>
 	</div>
 
@@ -35,55 +35,27 @@
 		</ul>
 	</nav>
 
-
 	<%= link_to root_path do %>
    		<%= image_tag "logo.png", id: "logo",  alt: "Logo Utopus - Home", title: "UTOPUS Home", tabindex: "11"  %>
 	<% end %>
 
 </header>
 
-<main>
+<main id="pagina-produtos">
 
-<div class="banner" id="iniciodoconteudo">
-   	<%= image_tag "banner-mobile.jpg", id: "bn-mob",  alt: "Banner Utopus" %>
-</div>
+<h1 id="iniciodoconteudo">Produtos</h1>
 
-<div id="imghome">
-	<a href="artistas.html">
-   		<%= image_tag "link-home1.jpg", class: "imglink",  alt: "Conheça nossos artistas" %>
-	</a>
-	<a href="eventos.html">
-   		<%= image_tag "link-home2.jpg", class: "imglink",  alt: "Veja nosso calendário" %>
-	</a>
-	<a href="produtos.html">
-   		<%= image_tag "link-home3.jpg", class: "imglink",  alt: "Conheça nossos produtos" %>
-	</a>
-	<a href="sobre.html">
-   		<%= image_tag "link-home4.jpg", class: "imglink",  alt: "Conheça a Utopus" %>
-	</a>
-</div>
-	
-<div id="sections-mob">
+<p>
+<strong>Em breve</strong> estaremos disponibilizando produtos exclusivos dos nossos 
+artistas e parceiros!
+</p>
 
-	<h1>Eventos</h1>
-	
-	
-   	<%= image_tag "evento_mobile.jpg", id: "event-mob",  alt: "Eventos Utopus" %>
-	
-	<div class="vejam">
-		<a href="eventos.html">Veja mais eventos</a>
-	</div>
-	<div class="linkstext">
-		<a href="artistas.html">Conheça os artistas</a>
-	</div>
-	<div class="linkstext">
-		<a href="produtos.html">Produtos</a>
-	</div>
-	<div class="linkstext">
-		<a href="galeria.html">Fotos e vídeos</a>
-	</div>	
+<p>
+Aguarde ou entre em contato, através do Facebook, Instagram ou e-mail, para mais informações.
+</p>
 
-</div>
+<div id="face"><p>;)</p></div>
+
 
 </main>
 

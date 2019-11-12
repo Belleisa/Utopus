@@ -20,7 +20,7 @@ main#pagina-artistas h1, main#pagina-produtos h1, main#pagina-galeria h1, main#p
 }
 
 body {
-	background-image: url(../imagens/bg.png);
+	background-image: asset-url("bg.png");
 	font-family: 'Lato', sans-serif;
 	background-attachment: fixed;
 	background-size: 100%;
@@ -182,11 +182,11 @@ div.banner {
 @media screen and (min-width: 701px) {
 
     @keyframes slide {
-	0%, 30% { background-image: url(../imagens/slider/s1-md.jpg); background-size: 100%; }
+	0%, 30% { background-image: asset-url("slider/s1-md.jpg"); background-size: 100%; }
 
-	35%, 65% { background-image: url(../imagens/slider/s2-md.jpg); background-size: 100%; }
+	35%, 65% { background-image: asset-url("slider/s2-md.jpg"); background-size: 100%; }
 
-	70%, 100% { background-image: url(../imagens/slider/s3-md.jpg); background-size: 100%; }
+	70%, 100% { background-image: asset-url("slider/s3-md.jpg"); background-size: 100%; }
 	}
 	
 	div.banner {
@@ -198,11 +198,11 @@ div.banner {
 @media screen and (min-width: 801px) {
 
     @keyframes slide {
-	0%, 30% { background-image: url(../imagens/slider/s1-lmd.jpg); background-size: 100%; }
+	0%, 30% { background-image: asset-url("slider/s1-lmd.jpg"); background-size: 100%; }
 
-	35%, 65% { background-image: url(../imagens/slider/s2-lmd.jpg); background-size: 100%; }
+	35%, 65% { background-image: asset-url("slider/s2-lmd.jpg"); background-size: 100%; }
 
-	70%, 100% { background-image: url(../imagens/slider/s3-lmd.jpg); background-size: 100%; }
+	70%, 100% { background-image: asset-url("slider/s3-lmd.jpg"); background-size: 100%; }
 	}
 	
 	div.banner {
@@ -213,11 +213,11 @@ div.banner {
 @media screen and (min-width: 1100px) {
 
     @keyframes slide {
-	0%, 30% { background-image: url(../imagens/slider/s1-lg.jpg); background-size: 100%; }
+	0%, 30% { background-image: asset-url("slider/s1-lg.jpg"); background-size: 100%; }
 
-	35%, 65% { background-image: url(../imagens/slider/s2-lg.jpg); background-size: 100%; }
+	35%, 65% { background-image: asset-url("slider/s2-lg.jpg"); background-size: 100%; }
 
-	70%, 100% { background-image: url(../imagens/slider/s3-lg.jpg); background-size: 100%; }
+	70%, 100% { background-image: asset-url("slider/s3-lg.jpg"); background-size: 100%; }
 	}
 	
 	div.banner {
@@ -725,7 +725,7 @@ main#pagina-artistas a>p {
 
 /* PÁGINA ARTISTAS - KEYFRAMES */
 
-img#key-img-pincel {
+#key-img-pincel {
 	height: 100px;
 }
 
@@ -733,12 +733,12 @@ img#key-img-pincel {
 	animation: imgrot 1s infinite;
 }
 
-main#pagina-artistas>h2>img#key-img-pincel {
+#key-img-pincel {
 	position: absolute;
 	left: 90%;
 }
 
-img#key-img-mic {
+#key-img-mic {
 	height: 100px;
 }
 
@@ -746,12 +746,12 @@ img#key-img-mic {
 	animation: imgrot 1s infinite;
 }
 
-main#pagina-artistas>h2>img#key-img-mic {
+#key-img-mic {
 	position: absolute;
 	left: 90%;
 }
 
-img#key-img-radio {
+#key-img-radio {
 	height: 100px;
 }
 
@@ -759,12 +759,12 @@ img#key-img-radio {
 	animation: imgrot 1s infinite;
 }
 
-main#pagina-artistas>h2>img#key-img-radio {
+#key-img-radio {
 	position: absolute;
 	left: 83%;
 }
 
-img#key-img-pincelp {
+#key-img-pincelp {
 	height: 100px;
 }
 
@@ -772,12 +772,12 @@ img#key-img-pincelp {
 	animation: imgrot 1s infinite;
 }
 
-main#pagina-artistas>h2>img#key-img-pincelp {
+#key-img-pincelp {
 	position: absolute;
 	left: 90%;
 }
 
-img#key-img-micm {
+#key-img-micm {
 	height: 100px;
 }
 
@@ -785,7 +785,7 @@ img#key-img-micm {
 	animation: imgrot 1s infinite;
 }
 
-main#pagina-artistas>h2>img#key-img-micm {
+#key-img-micm {
 	position: absolute;
 	left: 90%;
 }

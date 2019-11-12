@@ -1,0 +1,234 @@
+		<script>
+			$(document).ready(function()
+			{
+			$(".mostrar").hide();
+			$(".ocultar").click(function()
+			{
+			$(this).next(".mostrar").slideToggle(600);
+			});
+			});
+		</script>
+
+
+<header>
+
+	<div id="acessibilidade">
+		<ul id="atalhos">
+			<li><a href="#iniciodoconteudo" tabindex="autofocus" accesskey="1">Conteúdo [1]</a></li>
+			<li><a href="#iniciodomenu" tabindex="2" accesskey="2">Menu [2]</a></li>
+			<li><a href="#rodape" tabindex="3" accesskey="3">Rodapé [3]</a></li>
+		</ul>
+		<ul id="botoes">	
+			<li><a href="ajuda-acessibilidade.html" id="bt_acessibilidade" tabindex="4" accesskey="4">Acessibilidade [4]</a></li>
+			<li><a href="#" id="bt_contraste" tabindex="5" accesskey="5">Alto contraste [5]</a></li>	
+			<li><a href="#" id="bt_menor" tabindex="6" accesskey="6">-A</a></li>
+			<li><a href="#" id="bt_maior" tabindex="7" accesskey="7">+A</a></li>
+		</ul>
+		<noscript>
+			Caro leitor!
+			Se você estiver lendo esta mensagem é porque o seu navegador não suporta
+			"javascripts" ou porque a permissão de executar "javascripts" está
+			desabilitada.
+			Click no endereço a seguir para ver o conteúdo <a href="noscript/artistas.html">Artistas</a> em uma página sem "javascripts".
+		</noscript>
+	</div>
+
+<input type="checkbox" id="bt_menu">
+<label for="bt_menu">&#9776;</label>
+
+	<nav class="menu" id="iniciodomenu">
+		<ul>
+			<li><a href="artistas.html" tabindex="8">Artistas</a></li>
+			<li><a href="produtos.html" tabindex="9">Produtos</a></li>
+			<li><a href="galeria.html" tabindex="10">Galeria</a></li>
+			<li><a href="eventos.html" tabindex="12">Eventos</a></li>
+			<li><a href="sobre.html" tabindex="13">Sobre</a></li>
+			<li><a href="contato.html" tabindex="14">Contato</a></li>
+		</ul>
+	</nav>
+
+	<%= link_to root_path do %>
+   		<%= image_tag "logo.png", id: "logo",  alt: "Logo Utopus - Home", title: "UTOPUS Home", tabindex: "11"  %>
+	<% end %>
+
+</header>
+
+<main id="pagina-artistas">
+
+
+<h1 id="iniciodoconteudo"> Clique para ver os artistas &darr; </h1>
+
+<h2> Canto 
+<%= image_tag "keyframes/microfone_antigo.png", id: "key-img-mic",  alt: "Ilustração de um microfone antigo"  %>
+</h2>
+
+	<section class="categoria">
+   		<%= image_tag "artistas/6.jpg", alt: "Laís Keppke"  %>
+		<p> <strong> Laís Keppke </strong> </p>
+		<p> (13) 99672-0296 </p>
+	</section>
+
+	<section class="categoria">
+   		<%= image_tag "artistas/7.jpg", alt: "Nathanael Mendes"  %>
+		<p> <strong> Nathanael Mendes </strong> </p>
+		<p> (13) 3426-7216 | (13) 99644-7177 </p>
+	</section>
+
+<div class="ocultar">
+	<button> Ver mais desta categoria </button>
+</div>
+
+<div class="mostrar">
+	<section class="categoria">
+   		<%= image_tag "artistas/3.jpg", alt: "Carol Lins"  %>
+		<p> <strong> Carol Lins </strong> </p>
+		<p> (13) 99675-6025 </p>
+	</section>
+
+	<section class="categoria">
+   		<%= image_tag "artistas/9.jpg", alt: "Anna 'Cereja' Zechinato"  %>
+		<p> <strong> Anna "Cereja" Zechinatto </strong> </p>
+		<p> (13) 99739-0761 </p>
+	</section>
+
+	<section class="categoria">
+   		<%= image_tag "artistas/12.jpg", alt: "Gustavo Quederoli"  %>
+		<p> <strong> Gustavo Quederoli </strong> </p>
+		<p> (13) 99695-3504 </p>
+	</section>
+
+	<section class="categoria">
+   		<%= image_tag "artistas/8.jpg", alt: "Leo Domininsk"  %>
+		<p> <strong> Leo Domininsk </strong> </p>
+		<p> (13) 99724-9058 </p>
+	</section>
+</div>
+
+<h2> Composição
+<%= image_tag "keyframes/pincel_grande.png", id:"key-img-pincel", alt: "Ilustração de um pincel grande"  %>
+</h2>
+
+	<section class="categoria">	
+   		<%= image_tag "artistas/6.jpg", alt: "Laís Keppke"  %>
+		<p> <strong> Laís Keppke </strong> </p>
+		<p> (13) 99672-0296 </p>
+	</section>
+
+	<section class="categoria">
+   		<%= image_tag "artistas/12.jpg", alt: "Gustavo Quederoli"  %>
+		<p> <strong> Gustavo Quederoli </strong> </p>
+		<p> (13) 99695-3504 </p>
+	</section>
+
+<h2> Dança 
+<%= image_tag "keyframes/radio.png", id: "key-img-radio", alt: "Ilustração de um rádio"  %>
+</h2>
+
+	<section class="categoria">
+   		<%= image_tag "artistas/4.jpg", alt: "Grupo Freedom"  %>
+		<p> <strong> Grupo Freedom </strong> </p>
+		<p> (13) 99616-0568 </p>
+	</section>
+
+	<section class="categoria">
+   		<%= image_tag "artistas/5.jpg", alt: "Jordian Forman"  %>
+		<p> <strong> Jordian Forman </strong> </p>
+		<p> (13) 99616-0568 </p>
+	</section>
+
+<div class="ocultar">
+	<button> Ver mais desta categoria </button>
+</div>
+
+<div class="mostrar">
+	<section class="categoria">
+   		<%= image_tag "artistas/10.jpg", alt: "Derick Zechinato"  %>
+		<p> <strong> Derick Zechinatto </strong> </p>
+		<p> (13) 98176-6388 </p>
+	</section>
+
+	<section class="categoria">
+   		<%= image_tag "artistas/13.jpg", alt: "Giulia Minerva Wuaquim Dantas de Souza"  %>
+		<p> <strong> Giulia Minerva Wuaquim Dantas de Souza </strong> </p>
+		<p> (13) 99600-3381 </p>
+	</section>
+
+	<section class="categoria">
+   		<%= image_tag "artistas/11.jpg", alt: "Dupla NeWay"  %>
+		<p> <strong> Dupla NeWay </strong> </p>
+		<p> (13) 99739-0761 </p>
+	</section>
+
+	<section class="categoria">
+   		<%= image_tag "logo.png", alt: "Logo Utopus"  %>
+	</section>
+
+
+</div>
+
+<h2> Desenho 
+<%= image_tag "keyframes/pincel_pequeno.png", id: "key-img-pincelp", alt: "Ilustração de um pincel pequeno"  %>
+</h2>
+
+	<section class="categoria">
+   		<%= image_tag "artistas/1.jpg", alt: "Pedro Godoy"  %>
+		<p> <strong> Pedro Godoy </strong> </p>
+		<p> (13) 99171-9284 </p>
+	</section>
+
+	<section class="categoria">
+   		<%= image_tag "logo.png", alt: "Logo Utopus"  %>
+	</section>
+
+<h2> Poesia 
+<%= image_tag "keyframes/microfone_moderno.png", id: "key-img-micm", alt: "Ilustração de um microfone moderno"  %>
+</h2>
+
+	<section class="categoria">
+   		<%= image_tag "artistas/2.jpg", alt: "Vitor Cassimiro"  %>
+		<p> <strong> Vitor Cassimiro </strong> </p>
+		<p> (11) 94683-4968 </p>
+	</section>
+
+	<section class="categoria">
+   		<%= image_tag "artistas/8.jpg", alt: "Leo Domininsk"  %>
+		<p> <strong> Leo Domininsk </strong> </p>
+		<p> (13) 99724-9058 </p>
+	</section>
+
+<div class="ocultar">
+	<button> Ver mais desta categoria </button>
+</div>
+
+<div class="mostrar">
+	<section class="categoria">
+   		<%= image_tag "artistas/13.jpg", alt: "Giulia Minerva Wuaquim Dantes de Souza"  %>
+		<p> <strong> Giulia Minerva Wuaquim Dantas de Souza </strong> </p>
+		<p> (13) 99600-3381 </p>
+	</section>
+</div>
+
+<label for="topo_bot">
+		<a href="#iniciodoconteudo" id="topo_bot"><p>^</p></a>
+</label>
+
+</main>
+
+<footer id="rodape">
+
+<a href="https://www.youtube.com/channel/UCeDiq6Ex3FJeGyrcaaELjvg" target="_blank">
+   	<%= image_tag "yt.png", alt: "Ícone do Youtube", title: "Youtube Utopus" %>
+</a>
+<a href="https://www.facebook.com/projetoutopus/" target="_blank">
+   	<%= image_tag "fb.png", alt: "Ícone do Facebook", title: "Facebook Utopus" %>
+</a>
+<a href="https://www.instagram.com/projetoutopus/" target="_blank">
+   	<%= image_tag "ig.png", alt: "Ícone do Instagram", title: "Instagram Utopus" %>
+</a>
+<a href="http://blogutopus.blogspot.com.br/" target="_blank">
+   	<%= image_tag "blog.png", alt: "Ícone do Blog", title: "Blog Utopus" %>
+</a>
+
+<p> &copy; UTOPUS All rights reserved 2018 </p>
+
+</footer>
