@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
-  resources :disciplinas
-  resources :testes
+  #resources :disciplinas
+  #resources :testes
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   root "menu#root"
   get "/sobre", to: "menu#sobre"
